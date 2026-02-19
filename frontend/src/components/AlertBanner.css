@@ -1,0 +1,48 @@
+.alert-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--danger-bg);
+  border-bottom: 1px solid var(--danger);
+  color: var(--text);
+}
+
+.alert-icon {
+  font-size: 1.5rem;
+  color: var(--danger);
+  flex-shrink: 0;
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-content strong {
+  display: block;
+  color: var(--danger);
+  margin-bottom: 0.25rem;
+}
+
+.alert-content p {
+  margin: 0 0 0.25rem;
+  font-size: 0.9375rem;
+}
+
+.alert-stats {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.alert-dismiss {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.alert-dismiss:hover {
+  color: var(--text);
+}
