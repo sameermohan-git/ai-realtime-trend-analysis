@@ -1,0 +1,85 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.dashboard {
+  flex: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: auto;
+}
+
+/* Section scroll targets: leave room so fixed header doesn't cover title */
+.dashboard section[id] {
+  scroll-margin-top: 1rem;
+}
+
+.insights-kpis {
+  margin-bottom: 0.5rem;
+}
+
+.insights-section {
+  margin-top: 0.5rem;
+}
+
+.insights-section .section-title {
+  margin-top: 0;
+}
+
+.insights-grid,
+.widgets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1.25rem;
+}
+
+.widgets {
+  margin-top: 0.5rem;
+}
+
+.widgets-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.custom-section {
+  margin-top: 0.5rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0 0 0.25rem;
+}
+
+.section-title.heading-with-info {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .app-body {
+    flex-direction: column;
+  }
+  .dashboard {
+    padding: 1rem;
+  }
+}
